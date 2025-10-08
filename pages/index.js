@@ -8,16 +8,17 @@ function home (){
     function Numero (){
  const[contador , setContador] = useState(1);
  function contar (){
-     return(
+    setContador(contador+1)
+ }
+       return(
         <div>
         <div>
             {contador}
         </div>
-        <button onClick ={setContador}></button>
+        <button onClick ={contar}>adicionar</button>
         </div>
      )
- }
-    }
+   }
 
 }
 export default home;
